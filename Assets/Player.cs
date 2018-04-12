@@ -66,4 +66,9 @@ public class Player : MonoBehaviour
         float roll = rollDueToControlThrow;
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        print("Player triggered something");
+    }
 }
