@@ -18,11 +18,11 @@ public class CollisionHandler : MonoBehaviour {
     private void StartDeathSequence()
     {
         SendMessage("OnPlayerDeath");
-        Invoke("LoadGameStart", levelLoadDelay);
+        Invoke("ReloadScene", levelLoadDelay);
 
     }
 
-    private void ReloadScene()
+    private void ReloadScene() // string referenced
     {
         SceneManager.LoadScene(1);
     }

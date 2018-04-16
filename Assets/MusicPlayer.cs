@@ -19,6 +19,12 @@ public class MusicPlayer : MonoBehaviour
 
     private void Awake()
     {
+        int numOfMusicPlayers = FindObjectsOfType<MusicPlayer>().Length;
+        // if more than one music player in scene
+        if (numOfMusicPlayers > 1)
+            // destroy ourselves
+            Destroy(gameObject);           
+        else
         DontDestroyOnLoad(gameObject);
     }
 }
