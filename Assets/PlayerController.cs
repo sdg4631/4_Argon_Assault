@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
 
 
     float xThrow, yThrow;
+    bool isControlEnabled = true;
 
     // Use this for initialization
     void Start()
@@ -34,8 +35,12 @@ public class PlayerController : MonoBehaviour
 	// Update is called once per frame
 	void Update()
     {
-        ProcessTranslation();
-        ProcessRotation();
+        if(isControlEnabled)
+        {
+            ProcessTranslation();
+            ProcessRotation();
+        }
+        
 
     }
 
@@ -71,6 +76,6 @@ public class PlayerController : MonoBehaviour
 
     void OnPlayerDeath() // called by string reference
     {
-        print("Controls Froze");
+        isControlEnabled = false;       
     }
 }
