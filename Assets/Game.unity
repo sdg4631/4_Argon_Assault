@@ -113,6 +113,146 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &98123910
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 891268197}
+    m_Modifications:
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 215.87228
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.85845
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 41.467285
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 71.98908
+      objectReference: {fileID: 0}
+    - target: {fileID: 19807740, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: randomSeed
+      value: 1044369536
+      objectReference: {fileID: 0}
+    - target: {fileID: 108504, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_Name
+      value: Spiral_01.2 Tornado tall (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 19836752, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: randomSeed
+      value: 326271591
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.5336505
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.5336497
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &126216546 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+  m_PrefabInternal: {fileID: 2037848147}
+--- !u!1001 &205338238
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 891268197}
+    m_Modifications:
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 325.47226
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.85845
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -18.432709
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 71.98908
+      objectReference: {fileID: 0}
+    - target: {fileID: 19807740, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: randomSeed
+      value: 740539189
+      objectReference: {fileID: 0}
+    - target: {fileID: 108504, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_Name
+      value: Spiral_01.2 Tornado tall (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 19836752, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: randomSeed
+      value: 1572203510
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.5336505
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.5336497
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &210515996 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+  m_PrefabInternal: {fileID: 1334735847}
 --- !u!1001 &298588656
 Prefab:
   m_ObjectHideFlags: 0
@@ -165,6 +305,80 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1db365fe144c5504a83188ff5f22496c, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &378168861 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+  m_PrefabInternal: {fileID: 98123910}
+--- !u!4 &402824914 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+  m_PrefabInternal: {fileID: 423032911}
+--- !u!1001 &423032911
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 891268197}
+    m_Modifications:
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 324.67227
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.85845
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 255.06729
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 71.98908
+      objectReference: {fileID: 0}
+    - target: {fileID: 19807740, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: randomSeed
+      value: 2106811639
+      objectReference: {fileID: 0}
+    - target: {fileID: 108504, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_Name
+      value: Spiral_01.2 Tornado tall (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 19836752, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: randomSeed
+      value: 1143022420
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.5336505
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.5336497
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &439710788
 Prefab:
   m_ObjectHideFlags: 0
@@ -202,7 +416,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4504089806195144, guid: 0c4550d5fd2dc914293f7329aa6a899b, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 198348698706606906, guid: 0c4550d5fd2dc914293f7329aa6a899b,
         type: 2}
@@ -467,6 +681,224 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 6.7910004, y: 137.05, z: 196.86299}
+--- !u!4 &661637033 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+  m_PrefabInternal: {fileID: 789079720}
+--- !u!1001 &676203982
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 891268197}
+    m_Modifications:
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 402.5723
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -95.95845
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 128.58371
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 40.537487
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &789079720
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 891268197}
+    m_Modifications:
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 331.67227
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.85845
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 21.167297
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 71.98908
+      objectReference: {fileID: 0}
+    - target: {fileID: 19807740, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: randomSeed
+      value: -386942912
+      objectReference: {fileID: 0}
+    - target: {fileID: 108504, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_Name
+      value: Spiral_01.2 Tornado tall (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 19836752, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: randomSeed
+      value: 1563764166
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.5336505
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.5336497
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &891268196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 891268197}
+  m_Layer: 0
+  m_Name: Tornado Alley
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &891268197
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 891268196}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 413.82773, y: 135.25845, z: 222.8327}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1970264920}
+  - {fileID: 126216546}
+  - {fileID: 661637033}
+  - {fileID: 1033998532}
+  - {fileID: 1180365057}
+  - {fileID: 210515996}
+  - {fileID: 378168861}
+  - {fileID: 402824914}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &911801546
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 891268197}
+    m_Modifications:
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 288.87228
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.85845
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 99.56729
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 71.98908
+      objectReference: {fileID: 0}
+    - target: {fileID: 19807740, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: randomSeed
+      value: 44431545
+      objectReference: {fileID: 0}
+    - target: {fileID: 108504, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_Name
+      value: Spiral_01.2 Tornado tall (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 19836752, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: randomSeed
+      value: 132740974
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.5336505
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.5336497
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1032267593
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,6 +927,10 @@ Transform:
   m_Father: {fileID: 1512693744}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1033998532 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+  m_PrefabInternal: {fileID: 205338238}
 --- !u!1 &1035830471
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,6 +1045,10 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!4 &1180365057 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+  m_PrefabInternal: {fileID: 911801546}
 --- !u!1 &1211411644
 GameObject:
   m_ObjectHideFlags: 0
@@ -739,6 +1179,72 @@ Transform:
   m_Father: {fileID: 1512693744}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1334735847
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 891268197}
+    m_Modifications:
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 276.37228
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -94.85845
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -54.5327
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 71.98908
+      objectReference: {fileID: 0}
+    - target: {fileID: 19807740, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: randomSeed
+      value: 1600969955
+      objectReference: {fileID: 0}
+    - target: {fileID: 108504, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_Name
+      value: Spiral_01.2 Tornado tall (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 19836752, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: randomSeed
+      value: 2116061315
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.5336505
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.5336497
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1372074980
 GameObject:
   m_ObjectHideFlags: 0
@@ -907,7 +1413,7 @@ Transform:
   - {fileID: 1935224402}
   - {fileID: 1297050749}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1564674096
 GameObject:
@@ -1107,6 +1613,10 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1970264920 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+  m_PrefabInternal: {fileID: 676203982}
 --- !u!1 &1972902875 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1221215787330464, guid: ccee546c60797fd4b9db2d92d90e9467,
@@ -1139,6 +1649,72 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1001 &2037848147
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 891268197}
+    m_Modifications:
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 385.5723
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -103.658455
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 48.86731
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 71.98908
+      objectReference: {fileID: 0}
+    - target: {fileID: 19807740, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: randomSeed
+      value: -903796433
+      objectReference: {fileID: 0}
+    - target: {fileID: 108504, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_Name
+      value: Spiral_01.2 Tornado tall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 19836752, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: randomSeed
+      value: 1442605704
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.5336505
+      objectReference: {fileID: 0}
+    - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.5336497
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d18380a6098943a4a879b5a0f3826c9d, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &2043359021
 GameObject:
   m_ObjectHideFlags: 0
