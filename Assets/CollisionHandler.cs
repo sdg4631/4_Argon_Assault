@@ -8,13 +8,18 @@ public class CollisionHandler : MonoBehaviour {
 
     [Tooltip("In seconds")][SerializeField] float levelLoadDelay = 1.5f;
     [Tooltip("FX prefab on player")] [SerializeField] GameObject deathFX;
-    [Tooltip("FX prefab on player")] [SerializeField] GameObject scoreFX;
+    
 
-    ScoreBoard scoreBoard;
+    ScoreBoard scoreBoard; // 
+
+    public Rigidbody rb;
+    AudioSource scoreAudio;
 
     void Start()
     {
         scoreBoard = FindObjectOfType<ScoreBoard>();
+        rb = GetComponent<Rigidbody>();
+        scoreAudio = GetComponent<AudioSource>();
     }
 
     void OnCollisionEnter(Collision collision)
@@ -26,13 +31,17 @@ public class CollisionHandler : MonoBehaviour {
     void OnTriggerEnter(Collider other)
     {
         scoreBoard.ScoreHit();
-        scoreFX.SetActive(true);
-        Invoke("DeactivateScoreFX", 1f);      
-    }
 
-    void DeactivateScoreFX()
-    {
-        scoreFX.SetActive(false);
+        if(scoreAudio.isPlaying)
+        {
+            scoreAudio.Stop();
+            scoreAudio.Play();
+        }
+        else
+        {
+            scoreAudio.Play();
+        }
+        
     }
 
     private void StartDeathSequence()
@@ -40,6 +49,9 @@ public class CollisionHandler : MonoBehaviour {
         SendMessage("OnPlayerDeath");
         Invoke("ReloadScene", levelLoadDelay);
 
+        // ragdoll after collision
+        rb.isKinematic = false;
+        rb.detectCollisions = true;
     }
 
     private void ReloadScene() // string referenced
