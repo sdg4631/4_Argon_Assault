@@ -8,6 +8,7 @@ public class CollisionHandler : MonoBehaviour {
 
     [Tooltip("In seconds")][SerializeField] float levelLoadDelay = 1.5f;
     [Tooltip("FX prefab on player")] [SerializeField] GameObject deathFX;
+    [Tooltip("FX prefab on player")] [SerializeField] GameObject scoreFX;
 
     ScoreBoard scoreBoard;
 
@@ -20,12 +21,18 @@ public class CollisionHandler : MonoBehaviour {
     {
         StartDeathSequence();
         deathFX.SetActive(true);
-        print("collided");
+        
     }
     void OnTriggerEnter(Collider other)
     {
         scoreBoard.ScoreHit();
-        print("scored");
+        scoreFX.SetActive(true);
+        Invoke("DeactivateScoreFX", 1f);      
+    }
+
+    void DeactivateScoreFX()
+    {
+        scoreFX.SetActive(false);
     }
 
     private void StartDeathSequence()
