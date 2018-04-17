@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
     float xThrow, yThrow;
     bool isControlEnabled = true;
 
+
     // Use this for initialization
     void Start()
     {
@@ -40,8 +41,6 @@ public class PlayerController : MonoBehaviour
             ProcessTranslation();
             ProcessRotation();
         }
-        
-
     }
 
     private void ProcessTranslation()
