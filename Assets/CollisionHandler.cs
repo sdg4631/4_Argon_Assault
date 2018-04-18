@@ -50,6 +50,7 @@ public class CollisionHandler : MonoBehaviour {
         Invoke("ReloadScene", levelLoadDelay);
 
         // ragdoll after collision
+        rb.useGravity = true;
         rb.isKinematic = false;
         rb.detectCollisions = true;
     }
