@@ -9,16 +9,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 337831424, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
-  m_Name: PaperPlane2 (1)Timeline
+  m_Name: Score Gate (22)Timeline
   m_EditorClassIdentifier: 
   m_NextId: 0
   m_Tracks:
-  - {fileID: 114348687757112044}
+  - {fileID: 114091800704317112}
   m_FixedDuration: 0
   m_EditorSettings:
     m_Framerate: 60
   m_DurationMode: 0
---- !u!74 &74820641011888272
+--- !u!74 &74235504964602984
 AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -37,13 +37,19 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: {x: 0, y: 0, z: 0}
+        value: {x: -0.028028488, y: -2.5236511, z: 0.021331787}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 10.6
-        value: {x: 231.45486, y: 0.030509949, z: -0.0043640137}
+        time: 1
+        value: {x: 0.04386139, y: -157.35918, z: 0.01461792}
+        inSlope: {x: 0.0000045775696, y: -0.000022149405, z: 0}
+        outSlope: {x: 0.0000045775696, y: -0.000022149405, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 5
+        value: {x: 0.04386711, y: -157.3592, z: 0.01461792}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -95,7 +101,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 10.6
+    m_StopTime: 5
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -116,13 +122,19 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 0
+        value: -0.028028488
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 10.6
-        value: 231.45486
+        time: 1
+        value: 0.04386139
+        inSlope: 0.0000045775696
+        outSlope: 0.0000045775696
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 5
+        value: 0.04386711
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -138,13 +150,19 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 0
+        value: -2.5236511
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 10.6
-        value: 0.030509949
+        time: 1
+        value: -157.35918
+        inSlope: -0.000022149405
+        outSlope: -0.000022149405
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 5
+        value: -157.3592
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -160,13 +178,19 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 0
+        value: 0.021331787
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 10.6
-        value: -0.0043640137
+        time: 1
+        value: 0.01461792
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 5
+        value: 0.01461792
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -182,7 +206,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 1
   m_Events: []
---- !u!114 &114348687757112044
+--- !u!114 &114091800704317112
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -196,14 +220,14 @@ MonoBehaviour:
   m_Locked: 0
   m_Muted: 0
   m_CustomPlayableFullTypename: 
-  m_AnimClip: {fileID: 74820641011888272}
+  m_AnimClip: {fileID: 74235504964602984}
   m_Parent: {fileID: 11400000}
   m_Children: []
   m_Clips: []
   m_OpenClipPreExtrapolation: 1
   m_OpenClipPostExtrapolation: 1
-  m_OpenClipOffsetPosition: {x: 334.1, y: 64.2, z: 373.36}
-  m_OpenClipOffsetRotation: {x: -0.02233791, y: -0.68551385, z: -0.030360667, w: 0.7270832}
+  m_OpenClipOffsetPosition: {x: 310.8, y: -8.1, z: 169.3}
+  m_OpenClipOffsetRotation: {x: -0.18875562, y: -0.22681265, z: -0.68531954, w: -0.66578114}
   m_OpenClipTimeOffset: 0
   m_MatchTargetFields: 63
   m_Position: {x: 0, y: 0, z: 0}

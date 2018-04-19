@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
 
-    void OnPlayerDeath() // called by string reference
+    void DisableControls() // called by string reference
     {
         isControlEnabled = false;       
     }

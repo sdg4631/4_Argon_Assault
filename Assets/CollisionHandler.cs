@@ -4,16 +4,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CollisionHandler : MonoBehaviour {
+enum State { Playing, Dying, Finished}
+
+public class CollisionHandler : MonoBehaviour
+{
+    State state = State.Playing;
 
     [Tooltip("In seconds")][SerializeField] float levelLoadDelay = 1.5f;
     [Tooltip("FX prefab on player")] [SerializeField] GameObject deathFX;
-    
+    [Tooltip("Audio when level finished")] [SerializeField] GameObject finishAudio;
 
     ScoreBoard scoreBoard; // 
 
     public Rigidbody rb;
     AudioSource scoreAudio;
+    
 
     void Start()
     {
@@ -24,15 +29,42 @@ public class CollisionHandler : MonoBehaviour {
 
     void OnCollisionEnter(Collision collision)
     {
-        StartDeathSequence();
-        deathFX.SetActive(true);
+        if (state != State.Finished)
+        {
+            state = State.Dying;
+            StartDeathSequence();
+            deathFX.SetActive(true);
+        }
+        else
+        {           
+            SendMessage("DisableControls");
+            Ragdoll();
+        }
+
         
     }
     void OnTriggerEnter(Collider other)
     {
+        if(other.gameObject.tag == "EndGate")
+        {
+            state = State.Finished;
+            FinishLevelSequence();
+        }
+        else if(state == State.Dying)
+        {
+
+        }
+        else
+        {
+            Score();
+        }
+    }
+
+    private void Score()
+    {
         scoreBoard.ScoreHit();
 
-        if(scoreAudio.isPlaying)
+        if (scoreAudio.isPlaying)
         {
             scoreAudio.Stop();
             scoreAudio.Play();
@@ -41,15 +73,17 @@ public class CollisionHandler : MonoBehaviour {
         {
             scoreAudio.Play();
         }
-        
     }
 
     private void StartDeathSequence()
     {
-        SendMessage("OnPlayerDeath");
+        SendMessage("DisableControls");
         Invoke("ReloadScene", levelLoadDelay);
+        Ragdoll();
+    }
 
-        // ragdoll after collision
+    private void Ragdoll()
+    {
         rb.useGravity = true;
         rb.isKinematic = false;
         rb.detectCollisions = true;
@@ -58,5 +92,12 @@ public class CollisionHandler : MonoBehaviour {
     private void ReloadScene() // string referenced
     {
         SceneManager.LoadScene(1);
+    }
+
+    private void FinishLevelSequence()
+    {       
+        finishAudio.SetActive(true);
+
+        // TODO remove windFX
     }
 }
