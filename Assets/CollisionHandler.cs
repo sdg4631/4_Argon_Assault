@@ -13,11 +13,13 @@ public class CollisionHandler : MonoBehaviour
     [Tooltip("In seconds")][SerializeField] float levelLoadDelay = 1.5f;
     [Tooltip("FX prefab on player")] [SerializeField] GameObject deathFX;
     [Tooltip("Audio when level finished")] [SerializeField] GameObject finishAudio;
+  
 
     ScoreBoard scoreBoard; // 
 
     public Rigidbody rb;
     AudioSource scoreAudio;
+    
     
 
     void Start()
@@ -95,9 +97,11 @@ public class CollisionHandler : MonoBehaviour
     }
 
     private void FinishLevelSequence()
-    {       
+    {
         finishAudio.SetActive(true);
 
         // TODO remove windFX
     }
+
+
 }
