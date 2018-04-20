@@ -10,8 +10,9 @@ public class CollisionHandler : MonoBehaviour
 {
     State state = State.Playing;
 
-    [Tooltip("In seconds")][SerializeField] float levelLoadDelay = 1.5f;
+    [Tooltip("In seconds")][SerializeField] float levelLoadDelay = 2f;
     [Tooltip("FX prefab on player")] [SerializeField] GameObject deathFX;
+    [Tooltip("FX prefab on player")] [SerializeField] GameObject windFX;
     [Tooltip("Audio when level finished")] [SerializeField] GameObject finishAudio;
   
 
@@ -41,6 +42,7 @@ public class CollisionHandler : MonoBehaviour
         {           
             SendMessage("DisableControls");
             Ragdoll();
+            Destroy(windFX);
         }
 
         
@@ -59,6 +61,7 @@ public class CollisionHandler : MonoBehaviour
         else
         {
             Score();
+            windFX.SetActive(true);
         }
     }
 
@@ -99,9 +102,13 @@ public class CollisionHandler : MonoBehaviour
     private void FinishLevelSequence()
     {
         finishAudio.SetActive(true);
-
-        // TODO remove windFX
+        float timeToReloadSplash = 15f;       
+        Invoke("ReloadSplash", timeToReloadSplash);
+        
     }
 
-
+    private void ReloadSplash()
+    {
+        SceneManager.LoadScene(0);
+    }
 }

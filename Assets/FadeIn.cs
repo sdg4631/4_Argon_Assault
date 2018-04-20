@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class FadeIn : MonoBehaviour
 {
     Text title;
-    [SerializeField] float duration = 5f;
+    [SerializeField] float duration = 5f;    
 
 	// Use this for initialization
 	void Start ()
