@@ -13,6 +13,9 @@ public class CollisionHandler : MonoBehaviour
     [Tooltip("In seconds")][SerializeField] float levelLoadDelay = 2f;
     [Tooltip("FX prefab on player")] [SerializeField] GameObject deathFX;
     [Tooltip("FX prefab on player")] [SerializeField] GameObject windFX;
+    [Tooltip("FX prefab on player score")] [SerializeField] GameObject whiteScoreFX;
+    [Tooltip("FX prefab on player score")] [SerializeField] GameObject goldScoreFX;
+    [Tooltip("FX prefab on player score")] [SerializeField] GameObject finishFX;
     [Tooltip("Audio when level finished")] [SerializeField] GameObject finishAudio;
     
   
@@ -55,7 +58,6 @@ public class CollisionHandler : MonoBehaviour
     {
         if(other.gameObject.tag == "EndGate")
         {
-            state = State.Finished;
             FinishLevelSequence();
         }
         else if(state == State.Dying)
@@ -67,19 +69,21 @@ public class CollisionHandler : MonoBehaviour
             if(other.gameObject.tag == "Gold")
             {
                 GoldScore();
-
-                windFX.SetActive(true);
+                
             }
             else
             {
                 Score();
-                windFX.SetActive(true);
+                
             }
         }
     }
 
     private void GoldScore()
     {
+        goldScoreFX.SetActive(true);
+        windFX.SetActive(true);
+
         scoreBoard.ScoreHit();
         scoreBoard.ScoreHit();
         scoreBoard.ScoreHit();
@@ -99,6 +103,9 @@ public class CollisionHandler : MonoBehaviour
 
     private void Score()
     {
+        whiteScoreFX.SetActive(true);
+        windFX.SetActive(true);
+
         scoreBoard.ScoreHit();
 
         if (scoreAudio.isPlaying)
@@ -133,6 +140,7 @@ public class CollisionHandler : MonoBehaviour
 
     private void FinishLevelSequence()
     {
+        state = State.Finished;
         finishAudio.SetActive(true);
         float timeToReloadSplash = 15f;       
         Invoke("ReloadSplash", timeToReloadSplash);
