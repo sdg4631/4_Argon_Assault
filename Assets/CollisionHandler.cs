@@ -14,12 +14,14 @@ public class CollisionHandler : MonoBehaviour
     [Tooltip("FX prefab on player")] [SerializeField] GameObject deathFX;
     [Tooltip("FX prefab on player")] [SerializeField] GameObject windFX;
     [Tooltip("Audio when level finished")] [SerializeField] GameObject finishAudio;
+    
   
 
     ScoreBoard scoreBoard; // 
 
     public Rigidbody rb;
     AudioSource scoreAudio;
+    AudioSource goldScoreAudio;
     
     
 
@@ -27,7 +29,9 @@ public class CollisionHandler : MonoBehaviour
     {
         scoreBoard = FindObjectOfType<ScoreBoard>();
         rb = GetComponent<Rigidbody>();
-        scoreAudio = GetComponent<AudioSource>();
+        AudioSource[] audiosource = GetComponents<AudioSource>();
+        scoreAudio = audiosource[0];
+        goldScoreAudio = audiosource[1];
     }
 
     void OnCollisionEnter(Collision collision)
@@ -60,8 +64,36 @@ public class CollisionHandler : MonoBehaviour
         }
         else
         {
-            Score();
-            windFX.SetActive(true);
+            if(other.gameObject.tag == "Gold")
+            {
+                GoldScore();
+
+                windFX.SetActive(true);
+            }
+            else
+            {
+                Score();
+                windFX.SetActive(true);
+            }
+        }
+    }
+
+    private void GoldScore()
+    {
+        scoreBoard.ScoreHit();
+        scoreBoard.ScoreHit();
+        scoreBoard.ScoreHit();
+        scoreBoard.ScoreHit();
+        scoreBoard.ScoreHit();
+        
+        if (goldScoreAudio.isPlaying)
+        {
+            goldScoreAudio.Stop();
+            goldScoreAudio.Play();
+        }
+        else
+        {
+            goldScoreAudio.Play();
         }
     }
 
