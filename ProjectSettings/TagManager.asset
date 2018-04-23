@@ -6,6 +6,8 @@ TagManager:
   tags:
   - EndGate
   - Gold
+  - GoldFX
+  - FinishFX
   layers:
   - Default
   - TransparentFX

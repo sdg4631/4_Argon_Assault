@@ -13,14 +13,11 @@ public class CollisionHandler : MonoBehaviour
     [Tooltip("In seconds")][SerializeField] float levelLoadDelay = 2f;
     [Tooltip("FX prefab on player")] [SerializeField] GameObject deathFX;
     [Tooltip("FX prefab on player")] [SerializeField] GameObject windFX;
-    [Tooltip("FX prefab on player score")] [SerializeField] GameObject whiteScoreFX;
-    [Tooltip("FX prefab on player score")] [SerializeField] GameObject goldScoreFX;
-    [Tooltip("FX prefab on player score")] [SerializeField] GameObject finishFX;
     [Tooltip("Audio when level finished")] [SerializeField] GameObject finishAudio;
     
   
 
-    ScoreBoard scoreBoard; // 
+    ScoreBoard scoreBoard; 
 
     public Rigidbody rb;
     AudioSource scoreAudio;
@@ -81,7 +78,6 @@ public class CollisionHandler : MonoBehaviour
 
     private void GoldScore()
     {
-        goldScoreFX.SetActive(true);
         windFX.SetActive(true);
 
         scoreBoard.ScoreHit();
@@ -103,7 +99,6 @@ public class CollisionHandler : MonoBehaviour
 
     private void Score()
     {
-        whiteScoreFX.SetActive(true);
         windFX.SetActive(true);
 
         scoreBoard.ScoreHit();
@@ -142,6 +137,7 @@ public class CollisionHandler : MonoBehaviour
     {
         state = State.Finished;
         finishAudio.SetActive(true);
+        Invoke("Ragdoll", 2f);
         float timeToReloadSplash = 15f;       
         Invoke("ReloadSplash", timeToReloadSplash);
         
